@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="author" content="Rafael Pinheiro">
+    <title>Transportadora 2.0</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+</head>
+
+<body>
+    <section id="content">
+
+        <header>
+            <img id="logo" src="./images/truck.png">
+            <h1 id="title">Transportadora</h1>
+        </header>
+
+        <main>
+
+            <form>
+                <section id="input-area" class="form-group green-border-focus">
+                    <label>Digite os dados:</label>
+                    <textarea id="data" rows="4" autofocus placeholder="ex:120kg geladeira" class="form-control"></textarea>
+                </section>
+                <section id="buttons">
+                    <button onclick="controller()" class="btn btn-success" type="button" name="button">Enviar</button>
+                    <button onclick="clearTextArea()" class="btn btn-warning" type="button" name="button">Limpar</button>
+                </section>
+            </form>
+
+            <section id="result-section">
+                <label id="result">Resultado:</label>
+                <textarea id="result-text" disabled rows="8"></textarea>
+            </section>
+
+        </main>
+
+        <footer>
+            <h3>Rafael Pinheiro</h3>
+        </footer>
+
+    </section>
+
+</body></html>

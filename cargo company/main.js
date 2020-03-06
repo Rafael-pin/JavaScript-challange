@@ -109,7 +109,7 @@ function distributeItemsBetweenVehicles(item) {
 }
 
 function distributeItemInVehicle(vehicleType, item) {
-    if (!vehicleType.vehicles.length) { //is empty
+    if (!vehicleType.vehicles.length) {
         vehicleType.vehicles.push([item]);
         return;
     }
